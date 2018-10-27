@@ -1,5 +1,5 @@
 ---
-title: "Implementation details of some ML packages in R which use tree-based methods"
+layout: post
 math: true
 ---
 # Implementation details of some ML packages in R which use tree-based methods
