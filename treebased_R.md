@@ -1,6 +1,3 @@
----
-math: true
----
 # Implementation details of some ML packages in R which use tree-based methods
 
 Deep dive into some of the maths/stats/logic behind popular R packages for better tuning and understanding of algorithms.
@@ -57,7 +54,7 @@ xgboost has useful functions for deep diving into the produced tree structure. T
 
 `min_child_weight` is documented as the sum of hessians within node. For squared error loss (`reg:linear`), hessian = 1, so this simply corresponds to the minimum observations in a node. This is straightforward to set grid search values for.  
 
-For logloss (`binary:logistic`), hessian = $p(1-p)$, where p is the predicted probability. It is important to remember that p at each iteration is always the **most up-to-date prediction of the final probability**. Also, xgboost always begins p at 0.5. So, if we have to sum this over all observations in a leaf, how do we translate desired number of obs in leaf to `min_child_weight`?
+For logloss (`binary:logistic`), hessian = p(1-p), where p is the predicted probability. It is important to remember that p at each iteration is always the **most up-to-date prediction of the final probability**. Also, xgboost always begins p at 0.5. So, if we have to sum this over all observations in a leaf, how do we translate desired number of obs in leaf to `min_child_weight`?
 
 Say we want a minimum number of obs in a node, n. The absolute max `min_child_weight` is n * 0.25; avoid going over this value otherwise we'll get nonsensical results because the tree won't split.
 
