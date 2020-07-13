@@ -7,10 +7,14 @@ Dumping information relating to ML algorithms, such as:
 
 Largely a fact dump to help jog my memory of different concepts (not intended to be formal explanations).
 
-[**Gradient Boosting**](https://cdqd.github.io/knowledge_dump/gradientboosting)
+[**Gradient Boosting**](gradient_boosting.md)
 
-[**Implementation details of tree-based algorithms**](https://cdqd.github.io/knowledge_dump/treebased_R)
+[**Implementation details of tree-based algorithms**](treebased_R.md)
 
-[**Naive Bayes**](https://cdqd.github.io/knowledge_dump/naivebayes)
+[**Naive Bayes**](naive_bayes.md)
 
-[**Impact encoding**](https://cdqd.github.io/knowledge_dump/impactencoding)
+[**Impact encoding**](impact_encoding.md)
+
+[**Bayesian Optimization**](bayesian_optimisation.md)
+
+[**Model Interpretation**](model_interpretation.md)
