@@ -104,5 +104,6 @@ And this is the original paper by the authors of Tree SHAP: https://arxiv.org/pd
 
 Overall:
 
-* Use a (penalized) linear regression model for the best interpretability.
+* Use a linear regression model from the outset for the best interpretability.
 * If using Random Forest or Gradient Boosted Decision Trees, use Tree SHAP to explain how features are being handled by the model. The original implementation of [SHAP](https://github.com/slundberg/shap/tree/master/shap) in Python is best-in-class, and works with many tree algorithms from `scikit-learn`.
+* LIME or Kernel SHAP is a possible alternative for non-tree-based models.
